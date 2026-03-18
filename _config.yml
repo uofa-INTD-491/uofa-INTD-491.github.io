@@ -1,7 +1,7 @@
 title: INTD 491 Project Showcase
 description: Student projects for INTD 491, organized by semester and published on GitHub Pages.
-url: "https://jeremykid.github.io"
-baseurl: "/intd491-projects"
+url: "https://uofa-INTD-491.github.io"
+baseurl: ""
 theme: jekyll-theme-slate
 locale: en-US
 search: false
