@@ -1,0 +1,30 @@
+title: INTD 491 Project Showcase
+description: Student projects for INTD 491, organized by semester and published on GitHub Pages.
+url: "https://jeremykid.github.io"
+baseurl: "/intd491-projects"
+theme: jekyll-theme-slate
+locale: en-US
+search: false
+markdown: kramdown
+permalink: pretty
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+    sort_by: title
+
+defaults:
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: default
+
+sass:
+  style: compressed

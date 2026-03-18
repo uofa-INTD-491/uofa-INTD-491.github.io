@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-labelledby="title desc">
+  <title id="title">Food Rescue Routing Lab poster</title>
+  <desc id="desc">Abstract poster artwork with route diagrams, stop cards, and timing blocks.</desc>
+  <defs>
+    <linearGradient id="food-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8efd9" />
+      <stop offset="100%" stop-color="#e9d7aa" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#food-bg)" rx="36" />
+  <rect x="70" y="70" width="530" height="610" rx="28" fill="#ffffff" opacity="0.92" />
+  <rect x="640" y="70" width="490" height="250" rx="28" fill="#2e2e30" />
+  <rect x="640" y="360" width="490" height="320" rx="28" fill="#ffffff" opacity="0.9" />
+  <g fill="none" stroke="#c75b39" stroke-width="12" stroke-linecap="round">
+    <path d="M150 500c60-88 150-120 232-60s132 50 180-12" />
+  </g>
+  <g fill="#173042">
+    <circle cx="175" cy="504" r="18" />
+    <circle cx="330" cy="446" r="18" />
+    <circle cx="468" cy="500" r="18" />
+  </g>
+  <rect x="710" y="420" width="340" height="68" rx="18" fill="#edf0f2" />
+  <rect x="710" y="516" width="250" height="68" rx="18" fill="#d6e3ef" />
+  <text x="700" y="165" fill="#ffffff" font-family="Georgia, serif" font-size="56" font-weight="700">Food Rescue Routing Lab</text>
+  <text x="700" y="224" fill="#e7d9b7" font-family="Arial, sans-serif" font-size="29">Planning pickups and drop-offs under tight timing windows</text>
+</svg>

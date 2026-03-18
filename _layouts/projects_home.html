@@ -1,0 +1,42 @@
+---
+layout: default
+---
+<section class="page-intro">
+  <p class="page-kicker">{{ page.kicker | default: "Student projects" }}</p>
+  <h1>{{ page.title }}</h1>
+  <p class="page-lead">{{ page.lead | default: site.description }}</p>
+  {{ content }}
+</section>
+
+{% assign grouped_projects = site.projects | group_by: "semester" %}
+{% assign semester_pages = site.html_pages | where_exp: "item", "item.semester != nil" | sort: "semester_order" | reverse %}
+{% for semester_page in semester_pages %}
+  {% assign semester_projects = "" | split: "" %}
+  {% assign semester_group = grouped_projects | where: "name", semester_page.semester | first %}
+  {% if semester_group %}
+    {% assign semester_projects = semester_group.items | sort: "title" %}
+  {% endif %}
+  <section class="semester-section">
+    <div class="semester-section__header">
+      <div>
+        <p class="page-kicker">Semester archive</p>
+        <h2 class="semester-section__title">
+          <a href="{{ semester_page.url | relative_url }}">{{ semester_page.title }}</a>
+        </h2>
+      </div>
+      <p class="archive-summary">
+        {{ semester_projects.size }} project{% if semester_projects.size != 1 %}s{% endif %} · {{ semester_page.description }}
+      </p>
+    </div>
+
+    {% if semester_projects.size > 0 %}
+      <div class="project-grid">
+        {% for project in semester_projects %}
+          {% include project-card.html project=project %}
+        {% endfor %}
+      </div>
+    {% else %}
+      <p class="notice-box">No projects have been published for this semester yet.</p>
+    {% endif %}
+  </section>
+{% endfor %}

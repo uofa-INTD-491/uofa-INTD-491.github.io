@@ -1,0 +1,24 @@
+---
+layout: default
+---
+{% assign semester_projects = site.projects | where: "semester", page.semester | sort: "title" %}
+
+<section class="page-intro">
+  <p class="page-kicker">Semester archive</p>
+  <h1>{{ page.title }}</h1>
+  <p class="page-lead">
+    {{ page.description }} {% if semester_projects.size > 0 %}This archive currently includes {{ semester_projects.size }} published project{% if semester_projects.size != 1 %}s{% endif %}.{% endif %}
+  </p>
+
+  {{ content }}
+</section>
+
+{% if semester_projects.size > 0 %}
+  <div class="project-grid archive-grid">
+    {% for project in semester_projects %}
+      {% include project-card.html project=project %}
+    {% endfor %}
+  </div>
+{% else %}
+  <p class="notice-box">Projects will appear here as soon as students add markdown files under <code>_projects/</code>.</p>
+{% endif %}

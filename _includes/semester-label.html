@@ -1,0 +1,12 @@
+{% assign semester_page = include.pages | where: "semester", include.semester | first %}
+{% if semester_page %}
+  {{ semester_page.title }}
+{% else %}
+  {% assign parts = include.semester | split: "-" %}
+  {% if parts.size == 2 %}
+    {{ parts[1] | capitalize }} {{ parts[0] }}
+  {% else %}
+    {{ include.semester }}
+  {% endif %}
+{% endif %}
+

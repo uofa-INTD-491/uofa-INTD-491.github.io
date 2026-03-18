@@ -1,0 +1,38 @@
+{% assign project = include.project %}
+{% capture semester_label %}{% include semester-label.html semester=project.semester pages=site.html_pages %}{% endcapture %}
+{% assign team_value = project.team %}
+{% if team_value.first %}
+  {% assign team_text = team_value | join: ", " %}
+{% else %}
+  {% assign team_text = team_value %}
+{% endif %}
+<article class="project-card">
+  <a class="project-card__poster" href="{{ project.url | relative_url }}">
+    <img src="{{ project.poster_image | relative_url }}" alt="Poster for {{ project.title }}">
+  </a>
+  <div class="project-card__body">
+    <p class="project-card__kicker">
+      {{ semester_label | strip }}{% if team_text and team_text != blank %} | {{ team_text }}{% endif %}
+    </p>
+    <h3 class="project-card__title">
+      <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
+    </h3>
+    <p class="project-card__abstract">{{ project.short_abstract | strip_html | truncate: 150 }}</p>
+    {% if project.tags %}
+      <ul class="tag-list">
+        {% for tag in project.tags %}
+          <li>{{ tag }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+    <div class="project-card__links">
+      <a class="slate-button" href="{{ project.url | relative_url }}">Details</a>
+      {% if project.demo_url and project.demo_url != blank %}
+        <a class="slate-button slate-button--secondary" href="{{ project.demo_url }}" target="_blank" rel="noopener">Demo</a>
+      {% endif %}
+      {% if project.repo_url and project.repo_url != blank %}
+        <a class="slate-button slate-button--secondary" href="{{ project.repo_url }}" target="_blank" rel="noopener">Repo</a>
+      {% endif %}
+    </div>
+  </div>
+</article>

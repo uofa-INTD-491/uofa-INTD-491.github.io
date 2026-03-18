@@ -1,0 +1,69 @@
+---
+layout: default
+---
+{% assign semester_page = site.html_pages | where: "semester", page.semester | first %}
+{% capture semester_label %}{% include semester-label.html semester=page.semester pages=site.html_pages %}{% endcapture %}
+{% assign team_value = page.team %}
+{% if team_value.first %}
+  {% assign team_text = team_value | join: ", " %}
+{% else %}
+  {% assign team_text = team_value %}
+{% endif %}
+
+<section class="page-intro project-hero">
+  <div class="project-hero__copy">
+    <p class="page-kicker">Student project</p>
+    <h1>{{ page.title }}</h1>
+    {% if page.short_abstract %}
+      <p class="page-lead">{{ page.short_abstract }}</p>
+    {% endif %}
+
+    <div class="project-meta-grid">
+      <div class="project-meta-item">
+        <span class="project-meta-label">Semester</span>
+        <p>
+          {% if semester_page %}
+            <a href="{{ semester_page.url | relative_url }}">{{ semester_label | strip }}</a>
+          {% else %}
+            {{ semester_label | strip }}
+          {% endif %}
+        </p>
+      </div>
+
+      <div class="project-meta-item">
+        <span class="project-meta-label">Team</span>
+        <p>{{ team_text }}</p>
+      </div>
+
+      {% if page.tags %}
+        <div class="project-meta-item project-meta-item--full">
+          <span class="project-meta-label">Tags</span>
+          <ul class="tag-list">
+            {% for tag in page.tags %}
+              <li>{{ tag }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endif %}
+    </div>
+
+    <div class="button-row">
+      {% if page.demo_url and page.demo_url != blank %}
+        <a class="slate-button" href="{{ page.demo_url }}" target="_blank" rel="noopener">Open demo</a>
+      {% endif %}
+      {% if page.repo_url and page.repo_url != blank %}
+        <a class="slate-button slate-button--secondary" href="{{ page.repo_url }}" target="_blank" rel="noopener">Open repository</a>
+      {% endif %}
+    </div>
+  </div>
+
+  {% if page.poster_image %}
+    <figure class="project-hero__poster">
+      <img src="{{ page.poster_image | relative_url }}" alt="Poster for {{ page.title }}">
+    </figure>
+  {% endif %}
+</section>
+
+<section class="doc-card project-content">
+  {{ content }}
+</section>
