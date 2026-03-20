@@ -8,9 +8,10 @@ Submit new projects through a pull request.
 2. Create a branch for your project submission.
 3. Copy `_projects/_TEMPLATE.md` to a new file such as `_projects/2026-spring-riverwatch-dashboard.md`.
 4. Add one image under `assets/images/projects/<semester-slug>/`.
-5. Fill in all required front matter fields and the body sections.
-6. Change `published: false` to `published: true`, or remove the line entirely.
-7. Open a pull request against the default branch.
+5. If you want to show a team photo on the detail page, add a second image and set `group_image`.
+6. Fill in all required front matter fields and the body sections.
+7. Change `published: false` to `published: true`, or remove the line entirely.
+8. Open a pull request against the default branch.
 
 ## Required front matter
 
@@ -23,12 +24,17 @@ Submit new projects through a pull request.
 - `poster_image`
 - `short_abstract`
 
+Optional field:
+
+- `group_image`
+
 ## Image path rules
 
 - Put images under `assets/images/projects/<semester-slug>/`
 - Use lowercase filenames with hyphens
 - Point `poster_image` at the site-root path, for example:
   - `/assets/images/projects/2026-spring/riverwatch-dashboard.png`
+- If used, point `group_image` at a second site-root image path in the same folder.
 
 ## Semester rules
 

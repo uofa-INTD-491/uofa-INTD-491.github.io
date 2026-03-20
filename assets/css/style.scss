@@ -271,7 +271,8 @@ img {
 }
 
 .project-card__poster img,
-.project-hero__poster img {
+.project-hero__poster img,
+.project-hero__group img {
   display: block;
   width: 100%;
   height: 100%;
@@ -360,7 +361,21 @@ img {
   margin-top: 0;
 }
 
+.project-hero__media {
+  display: grid;
+  gap: 16px;
+}
+
 .project-hero__poster {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--slate-border);
+  border-radius: 8px;
+  background: #dcdcdc;
+  box-shadow: var(--slate-shadow);
+}
+
+.project-hero__group {
   margin: 0;
   overflow: hidden;
   border: 1px solid var(--slate-border);

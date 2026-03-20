@@ -13,9 +13,10 @@ Submit new projects through a pull request.
 2. Create a branch for your submission.
 3. Copy `_projects/_TEMPLATE.md` to a new file in `_projects/`.
 4. Add one poster or teaser image under `assets/images/projects/<semester-slug>/`.
-5. Fill in the required front matter and body sections.
-6. Change `published: false` to `published: true`, or remove the line entirely.
-7. Open a pull request to the default branch.
+5. If you want a team photo on the project page, add a second image and set `group_image`.
+6. Fill in the required front matter and body sections.
+7. Change `published: false` to `published: true`, or remove the line entirely.
+8. Open a pull request to the default branch.
 
 ## Required fields
 
@@ -27,6 +28,10 @@ Submit new projects through a pull request.
 - `demo_url`
 - `poster_image`
 - `short_abstract`
+
+Optional field:
+
+- `group_image`
 
 ## Image path example
 

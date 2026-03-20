@@ -10,6 +10,7 @@ tags:
 repo_url: https://github.com/your-org/your-project
 demo_url:
 poster_image: /assets/images/projects/2026-spring/your-project.svg
+group_image:
 short_abstract: Write a 1-2 sentence summary that explains the problem, audience, and what the project delivers.
 published: false
 ---

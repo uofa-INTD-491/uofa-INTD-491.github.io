@@ -38,6 +38,10 @@ Each project file must define:
 - `poster_image`
 - `short_abstract`
 
+Optional fields:
+
+- `group_image`
+
 Use `_projects/_TEMPLATE.md` as the starting point.
 
 ## Add a new semester
@@ -56,9 +60,10 @@ Use `_projects/_TEMPLATE.md` as the starting point.
 
 1. Copy `_projects/_TEMPLATE.md` to a new file.
 2. Add your image under `assets/images/projects/<semester-slug>/`.
-3. Fill in the front matter and body content.
-4. Remove `published: false` or change it to `published: true`.
-5. Confirm it appears on `/projects/` and on the matching semester archive page.
+3. If you want a student team photo on the detail page, add a second image and set `group_image`.
+4. Fill in the front matter and body content.
+5. Remove `published: false` or change it to `published: true`.
+6. Confirm it appears on `/projects/` and on the matching semester archive page.
 
 See `CONTRIBUTING.md` for the student-friendly version.
 

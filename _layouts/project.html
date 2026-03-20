@@ -57,10 +57,20 @@ layout: default
     </div>
   </div>
 
-  {% if page.poster_image %}
-    <figure class="project-hero__poster">
-      <img src="{{ page.poster_image | relative_url }}" alt="Poster for {{ page.title }}">
-    </figure>
+  {% if page.poster_image or page.group_image %}
+    <div class="project-hero__media">
+      {% if page.poster_image %}
+        <figure class="project-hero__poster">
+          <img src="{{ page.poster_image | relative_url }}" alt="Poster for {{ page.title }}">
+        </figure>
+      {% endif %}
+
+      {% if page.group_image %}
+        <figure class="project-hero__group">
+          <img src="{{ page.group_image | relative_url }}" alt="Group photo for {{ page.title }}">
+        </figure>
+      {% endif %}
+    </div>
   {% endif %}
 </section>
 
