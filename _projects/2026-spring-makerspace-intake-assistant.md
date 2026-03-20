@@ -12,6 +12,7 @@ tags:
 repo_url: https://github.com/example/makerspace-intake-assistant
 demo_url:
 poster_image: /assets/images/projects/2026-spring/makerspace-intake-assistant.svg
+group_image: /assets/images/projects/2026-spring/makerspace-intake-assistant-group.svg
 short_abstract: A guided intake tool that helps student teams describe fabrication requests, flag safety needs early, and reduce back-and-forth with makerspace staff.
 ---
 ## Problem

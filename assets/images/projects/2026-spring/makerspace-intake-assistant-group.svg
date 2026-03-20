@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-labelledby="title desc">
+  <title id="title">Makerspace Intake Assistant group photo placeholder</title>
+  <desc id="desc">Sample team photo artwork with three student silhouettes and a workshop backdrop.</desc>
+  <defs>
+    <linearGradient id="group-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f4f6f8" />
+      <stop offset="100%" stop-color="#d9dee4" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#group-bg)" rx="36" />
+  <rect x="90" y="90" width="1020" height="570" rx="30" fill="#ffffff" opacity="0.9" />
+  <rect x="150" y="130" width="900" height="180" rx="26" fill="#2d2d2f" />
+  <rect x="200" y="360" width="180" height="220" rx="24" fill="#d9e6f3" />
+  <rect x="510" y="330" width="180" height="250" rx="24" fill="#f1dbc8" />
+  <rect x="820" y="360" width="180" height="220" rx="24" fill="#d8e0dd" />
+  <g fill="#4e5560">
+    <circle cx="290" cy="402" r="54" />
+    <circle cx="600" cy="378" r="62" />
+    <circle cx="910" cy="402" r="54" />
+  </g>
+  <g fill="#6b7481">
+    <path d="M220 560c14-78 54-116 110-116s96 38 110 116z" />
+    <path d="M494 570c18-92 61-138 126-138s108 46 126 138z" />
+    <path d="M840 560c14-78 54-116 110-116s96 38 110 116z" />
+  </g>
+  <text x="188" y="210" fill="#ffffff" font-family="Georgia, serif" font-size="54" font-weight="700">Makerspace Team Photo</text>
+  <text x="188" y="266" fill="#d7dde3" font-family="Arial, sans-serif" font-size="29">Sample group image for the project detail page</text>
+</svg>
