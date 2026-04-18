@@ -16,8 +16,8 @@ tags:
   - Python
 repo_url: https://github.com/codebylinh/INTD-491_Perinatal-Depression-Screening-and-Management-Program
 demo_url: https://intd-491-perinatal-depression-scree-phi.vercel.app/
-# poster_image: /assets/images/projects/2026-winter/mnist-vercel-demo.svg
-group_image: /assets/images/projects/2026-spring/Perinatal_teams.jpg
+poster_image: /assets/images/projects/2026-winter/Perinatal_poster.png
+group_image: /assets/images/projects/2026-winter/Perinatal_teams.jpg
 short_abstract: A cloud-deployed web application that predicts postpartum depression risk using logistic regression (for flagging high-risk individuals) and ElasticNet (for estimating the severity of postpartum symptoms on a continuous scale) models trained on first-trimester, second-trimester and third-trimester clinical data.
 ---
 ## Problem

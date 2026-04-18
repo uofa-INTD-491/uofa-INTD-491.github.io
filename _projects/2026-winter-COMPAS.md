@@ -18,6 +18,8 @@ tags:
 repo_url: https://github.com/INTD491/COMPASW26
 demo_repo_url: https://github.com/khanheric2003/intd491_cloud_deploy
 demo_url: https://intd491-cloud-deploy.vercel.app/
+poster_image: /assets/images/posters/COMPAS_poster.png
+group_image: /assets/images/projects/2026-winter/COMPAS_teams.jpg
 short_abstract: A cloud-deployed dashboard that analyzes recidivism prediction performance across jurisdictions, highlighting fairness trade-offs, interpretability with SHAP, and model generalization.
 ---
 ## Problem
