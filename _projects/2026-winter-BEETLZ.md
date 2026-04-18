@@ -19,9 +19,10 @@ repo_url: https://github.com/animeshm19/beetlz-ui
 demo_url: https://beetlz-ui.vercel.app/
 poster_image: /assets/images/posters/BEETLZ_poster.png
 group_image: /assets/images/projects/2026-winter/BEETLZ_teams.jpg
-short_abstract: A classroom-ready Tree Damage Detection demo that combines dataset summaries, a
-browser drawing canvas, and a Vercel-hosted Python inference API backed by a small
-CNN exported to NumPy weights.
+short_abstract: >
+  A classroom-ready tree damage detection demo that combines dataset context,
+  a browser-based prediction experience, and a cloud-hosted inference API for
+  fast classroom walkthroughs.
 ---
 
 ## Abstract

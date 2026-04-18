@@ -24,8 +24,7 @@ body_class: home-page
   <div>
     <h2>Live archives</h2>
     <ul>
-      <li><a href="{{ '/2026-spring/' | relative_url }}">Spring 2026</a></li>
-      <li><a href="{{ '/2025-fall/' | relative_url }}">Fall 2025</a></li>
+      <li><a href="{{ '/2026-winter/' | relative_url }}">Winter 2026</a></li>
       <li><a href="{{ '/contributing/' | relative_url }}">Contribution guide</a></li>
     </ul>
   </div>

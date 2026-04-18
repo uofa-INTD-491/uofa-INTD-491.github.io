@@ -1,6 +1,6 @@
 ---
 title: IMDb Team - Analyzing Posters' Relationship to Opening Weekend Revenue
-semester: Winter, 2026
+semester: 2026 Winter
 team:
 - Sehej Brar
 - Amarachi Ukoha
@@ -16,7 +16,8 @@ tags:
 
 repo_url: https://github.com/alec-zaiane/INTD491-IMDB
 demo_url: https://intd491-vercel.vercel.app/
-group_image: /assets/images/projects/2026-winter/IMDB_teams.jpg
+poster_image: /assets/images/projects/2026-winter/posters/IMDB_poster.png
+group_image: /assets/images/projects/2026-winter/projects/IMDB_teams.jpg
 short_abstract: A complete machine learning pipeline that combines movie metadata with its posters to generate predictions about a movie's opening weekend revenue. The model is hosted on Vercel with a Django backend that allows users to upload their own movie poster for a revenue prediciton.
 
 ---
