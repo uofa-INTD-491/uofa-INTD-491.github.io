@@ -17,8 +17,8 @@ tags:
 
 repo_url: https://github.com/animeshm19/beetlz-ui
 demo_url: https://beetlz-ui.vercel.app/
-poster_image: /assets/images/posters/BEETLZ_poster.png
-group_image: /assets/images/projects/2026-winter/BEETLZ_teams.jpg
+poster_image: /assets/images/2026-winter/posters/BEETLZ_poster.png
+group_image: /assets/images/2026-winter/projects/BEETLZ_teams.jpg
 short_abstract: >
   A classroom-ready tree damage detection demo that combines dataset context,
   a browser-based prediction experience, and a cloud-hosted inference API for
