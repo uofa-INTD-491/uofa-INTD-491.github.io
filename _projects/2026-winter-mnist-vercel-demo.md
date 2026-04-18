@@ -10,8 +10,8 @@ tags:
   - Next.js
 repo_url: https://github.com/jeremykid/intd-491-Vercel-Demo
 demo_url: https://intd-491-vercel-demo.vercel.app/
-poster_image: /assets/images/2026-winter/posters/mnist-vercel-demo.svg
-group_image: /assets/images/2026-winter/projects/makerspace-intake-assistant-group.svg
+poster_image: /assets/images/2026-winter/projects/mnist-vercel-demo.svg
+# group_image: /assets/images/2026-winter/projects/makerspace-intake-assistant-group.svg
 short_abstract: A classroom-ready MNIST demo that combines dataset summaries, a browser drawing canvas, and a Vercel-hosted Python inference API backed by a small CNN exported to NumPy weights.
 ---
 ## Problem
